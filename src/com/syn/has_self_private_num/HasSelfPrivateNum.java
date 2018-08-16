@@ -1,4 +1,4 @@
-package com.has_self_private_num;
+package com.syn.has_self_private_num;
 
 public class HasSelfPrivateNum {
 	private int num = 0;
