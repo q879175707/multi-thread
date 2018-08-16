@@ -1,4 +1,4 @@
-package com.current_thread;
+package com.interrupted.current_thread;
 
 public class CountOperate  extends Thread{
 	public CountOperate() {
