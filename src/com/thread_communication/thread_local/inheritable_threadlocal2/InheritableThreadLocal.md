@@ -1,0 +1,6 @@
+使用inheritableThreadLocal类可以让子线程从父线程中取得值
+在继承的同时还可以对值进行进一步的处理重写ChileValue方法
+
+在使用inheritableThreadLocal类需要注意的一点是，如果子线
+程在取得值的同时，主线程将InheritableThreadLocal中的值进
+行修改，那么子线程取到的值还是旧值。
