@@ -1,4 +1,4 @@
-package com.thread_communication.join.join_sleep_1;
+package com.thread_communication.join.join_sleep_2;
 
 public class ThreadB extends Thread{
 

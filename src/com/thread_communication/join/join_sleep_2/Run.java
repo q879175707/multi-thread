@@ -1,13 +1,12 @@
-package com.thread_communication.join.join_sleep_1;
+package com.thread_communication.join.join_sleep_2;
 
 /**
- * 由于线程ThreadA使用Thread.sleep(long)方法一直持有ThreadB对象
- * 的锁，时间达到6秒，所以线程C只有在ThreadA时间到达6秒后释放ThreadB的
- * 锁时，才可以调用ThreadB中的同步方法synchronized public void bService()
+ * 由于线程ThreadA 释放了ThreadB的锁，所以线程ThreadC可以调用ThreadB中的
+ * 同步方法 synchronized public void BService();
  * 
- * 正面Thread.sleep()方法不释放锁
+ * 说明join（long） 具有释放锁的特点。
+ * 
  * @author Administrator
- *
  */
 public class Run {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.thread_communication.join.join_sleep_1;
+package com.thread_communication.join.join_sleep_2;
 
 public class ThreadA extends Thread{
 	
@@ -14,8 +14,11 @@ public class ThreadA extends Thread{
 		try {
 			synchronized (b) {
 				b.start();
-				Thread.sleep(6000);
-				// Thread.sleep()不释放锁
+				b.join(); // 说明join释放锁了！
+				for (int i = 0; i < Integer.MAX_VALUE; i++) {
+					String newString = new String();
+					Math.random();
+				}
 			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
